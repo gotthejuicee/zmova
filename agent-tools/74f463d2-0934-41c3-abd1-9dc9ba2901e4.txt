@@ -1,0 +1,172 @@
+
+FullName                                                                                                        Length 
+--------                                                                                                        ------ 
+C:\Users\user\Desktop\zmova2026\zmova\app                                                                              
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap                                                                        
+C:\Users\user\Desktop\zmova2026\zmova\config                                                                           
+C:\Users\user\Desktop\zmova2026\zmova\database                                                                         
+C:\Users\user\Desktop\zmova2026\zmova\node_modules                                                                     
+C:\Users\user\Desktop\zmova2026\zmova\public                                                                           
+C:\Users\user\Desktop\zmova2026\zmova\resources                                                                        
+C:\Users\user\Desktop\zmova2026\zmova\routes                                                                           
+C:\Users\user\Desktop\zmova2026\zmova\storage                                                                          
+C:\Users\user\Desktop\zmova2026\zmova\tests                                                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor                                                                           
+C:\Users\user\Desktop\zmova2026\zmova\.editorconfig                                                             275    
+C:\Users\user\Desktop\zmova2026\zmova\.env                                                                      1748   
+C:\Users\user\Desktop\zmova2026\zmova\.env.example                                                              1585   
+C:\Users\user\Desktop\zmova2026\zmova\.gitattributes                                                            186    
+C:\Users\user\Desktop\zmova2026\zmova\.gitignore                                                                341    
+C:\Users\user\Desktop\zmova2026\zmova\.npmrc                                                                    31     
+C:\Users\user\Desktop\zmova2026\zmova\artisan                                                                   425    
+C:\Users\user\Desktop\zmova2026\zmova\composer.json                                                             2966   
+C:\Users\user\Desktop\zmova2026\zmova\composer.lock                                                             390954 
+C:\Users\user\Desktop\zmova2026\zmova\package-lock.json                                                         66466  
+C:\Users\user\Desktop\zmova2026\zmova\package.json                                                              490    
+C:\Users\user\Desktop\zmova2026\zmova\phpunit.xml                                                               1322   
+C:\Users\user\Desktop\zmova2026\zmova\README.md                                                                 3242   
+C:\Users\user\Desktop\zmova2026\zmova\vite.config.js                                                            436    
+C:\Users\user\Desktop\zmova2026\zmova\app\Enums                                                                        
+C:\Users\user\Desktop\zmova2026\zmova\app\Filament                                                                     
+C:\Users\user\Desktop\zmova2026\zmova\app\Http                                                                         
+C:\Users\user\Desktop\zmova2026\zmova\app\Jobs                                                                         
+C:\Users\user\Desktop\zmova2026\zmova\app\Models                                                                       
+C:\Users\user\Desktop\zmova2026\zmova\app\Providers                                                                    
+C:\Users\user\Desktop\zmova2026\zmova\app\Services                                                                     
+C:\Users\user\Desktop\zmova2026\zmova\app\Enums\OrderStatus.php                                                 1373   
+C:\Users\user\Desktop\zmova2026\zmova\app\Filament\Resources                                                           
+C:\Users\user\Desktop\zmova2026\zmova\app\Http\Controllers                                                             
+C:\Users\user\Desktop\zmova2026\zmova\app\Http\Requests                                                                
+C:\Users\user\Desktop\zmova2026\zmova\app\Jobs\SendOrderToTelegram.php                                          702    
+C:\Users\user\Desktop\zmova2026\zmova\app\Models\Order.php                                                      616    
+C:\Users\user\Desktop\zmova2026\zmova\app\Models\User.php                                                       1292   
+C:\Users\user\Desktop\zmova2026\zmova\app\Providers\Filament                                                           
+C:\Users\user\Desktop\zmova2026\zmova\app\Providers\AppServiceProvider.php                                      594    
+C:\Users\user\Desktop\zmova2026\zmova\app\Services\TelegramNotifier.php                                         2205   
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap\cache                                                                  
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap\app.php                                                         657    
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap\providers.php                                                   120    
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap\cache\.gitignore                                                14     
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap\cache\packages.php                                              3209   
+C:\Users\user\Desktop\zmova2026\zmova\bootstrap\cache\services.php                                              24032  
+C:\Users\user\Desktop\zmova2026\zmova\config\app.php                                                            4272   
+C:\Users\user\Desktop\zmova2026\zmova\config\auth.php                                                           4040   
+C:\Users\user\Desktop\zmova2026\zmova\config\cache.php                                                          4369   
+C:\Users\user\Desktop\zmova2026\zmova\config\database.php                                                       6876   
+C:\Users\user\Desktop\zmova2026\zmova\config\filesystems.php                                                    2532   
+C:\Users\user\Desktop\zmova2026\zmova\config\logging.php                                                        4340   
+C:\Users\user\Desktop\zmova2026\zmova\config\mail.php                                                           3631   
+C:\Users\user\Desktop\zmova2026\zmova\config\queue.php                                                          4199   
+C:\Users\user\Desktop\zmova2026\zmova\config\services.php                                                       1159   
+C:\Users\user\Desktop\zmova2026\zmova\config\session.php                                                        8423   
+C:\Users\user\Desktop\zmova2026\zmova\database\factories                                                               
+C:\Users\user\Desktop\zmova2026\zmova\database\migrations                                                              
+C:\Users\user\Desktop\zmova2026\zmova\database\seeders                                                                 
+C:\Users\user\Desktop\zmova2026\zmova\database\.gitignore                                                       10     
+C:\Users\user\Desktop\zmova2026\zmova\database\database.sqlite                                                  114688 
+C:\Users\user\Desktop\zmova2026\zmova\database\factories\UserFactory.php                                        1044   
+C:\Users\user\Desktop\zmova2026\zmova\database\migrations\0001_01_01_000000_create_users_table.php              1473   
+C:\Users\user\Desktop\zmova2026\zmova\database\migrations\0001_01_01_000001_create_cache_table.php              873    
+C:\Users\user\Desktop\zmova2026\zmova\database\migrations\0001_01_01_000002_create_jobs_table.php               1883   
+C:\Users\user\Desktop\zmova2026\zmova\database\migrations\2026_06_22_083231_create_orders_table.php             941    
+C:\Users\user\Desktop\zmova2026\zmova\database\seeders\DatabaseSeeder.php                                       765    
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\.bin                                                                
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\.vite-temp                                                          
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@emnapi                                                             
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@jridgewell                                                         
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@napi-rs                                                            
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@oxc-project                                                        
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@rolldown                                                           
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@tailwindcss                                                        
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@tybys                                                              
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\@vue                                                                
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\alpinejs                                                            
+C:\Users\user\Desktop\zmova2026\zmova\node_modules\ansi-regex
+
+... (output truncated) ...
+
+nomaduro\collision                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\nunomaduro\termwind                                                       
+C:\Users\user\Desktop\zmova2026\zmova\vendor\openspout\openspout                                                       
+C:\Users\user\Desktop\zmova2026\zmova\vendor\paragonie\constant_time_encoding                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phar-io\manifest                                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phar-io\version                                                           
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpoption\phpoption                                                       
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpunit\php-code-coverage                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpunit\php-file-iterator                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpunit\php-invoker                                                       
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpunit\php-text-template                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpunit\php-timer                                                         
+C:\Users\user\Desktop\zmova2026\zmova\vendor\phpunit\phpunit                                                           
+C:\Users\user\Desktop\zmova2026\zmova\vendor\pragmarx\google2fa                                                        
+C:\Users\user\Desktop\zmova2026\zmova\vendor\pragmarx\google2fa-qrcode                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\clock                                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\container                                                             
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\event-dispatcher                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\http-client                                                           
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\http-factory                                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\http-message                                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\log                                                                   
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psr\simple-cache                                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\psy\psysh                                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\ralouphie\getallheaders                                                   
+C:\Users\user\Desktop\zmova2026\zmova\vendor\ramsey\collection                                                         
+C:\Users\user\Desktop\zmova2026\zmova\vendor\ramsey\uuid                                                               
+C:\Users\user\Desktop\zmova2026\zmova\vendor\ryangjchandler\blade-capture-directive                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\scrivo\highlight.php                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\cli-parser                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\comparator                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\complexity                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\diff                                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\environment                                                     
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\exporter                                                        
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\global-state                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\lines-of-code                                                   
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\object-enumerator                                               
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\object-reflector                                                
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\recursion-context                                               
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\type                                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor\sebastian\version                                                         
+C:\Users\user\Desktop\zmova2026\zmova\vendor\spatie\invade                                                             
+C:\Users\user\Desktop\zmova2026\zmova\vendor\spatie\laravel-package-tools                                              
+C:\Users\user\Desktop\zmova2026\zmova\vendor\spatie\shiki-php                                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\staabm\side-effects-detector                                              
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\clock                                                             
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\console                                                           
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\css-selector                                                      
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\deprecation-contracts                                             
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\error-handler                                                     
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\event-dispatcher                                                  
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\event-dispatcher-contracts                                        
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\finder                                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\html-sanitizer                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\http-foundation                                                   
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\http-kernel                                                       
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\mailer                                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\mime                                                              
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-ctype                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-intl-grapheme                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-intl-idn                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-intl-normalizer                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-mbstring                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-php80                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-php83                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-php84                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-php85                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-php86                                                    
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\polyfill-uuid                                                     
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\process                                                           
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\routing                                                           
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\service-contracts                                                 
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\string                                                            
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\translation                                                       
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\translation-contracts                                             
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\uid                                                               
+C:\Users\user\Desktop\zmova2026\zmova\vendor\symfony\var-dumper                                                        
+C:\Users\user\Desktop\zmova2026\zmova\vendor\theseer\tokenizer                                                         
+C:\Users\user\Desktop\zmova2026\zmova\vendor\tijsverkoyen\css-to-inline-styles                                         
+C:\Users\user\Desktop\zmova2026\zmova\vendor\ueberdosis\tiptap-php                                                     
+C:\Users\user\Desktop\zmova2026\zmova\vendor\vlucas\phpdotenv                                                          
+C:\Users\user\Desktop\zmova2026\zmova\vendor\voku\portable-ascii                                                       
+
+
