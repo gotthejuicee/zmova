@@ -26,6 +26,9 @@
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
 
+    {{-- schema.org: Book + FAQPage (rich-сніпети в пошуку) --}}
+    <x-structured-data />
+
     {{-- Шрифти: self-hosted дзеркало Google Fonts (без трекінгу), з кириличними сабсетами --}}
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
     <link href="https://fonts.bunny.net/css?family=montserrat:300,400,500,700|mulish:400,500,700|oswald:400,600|caveat:400&display=swap" rel="stylesheet">

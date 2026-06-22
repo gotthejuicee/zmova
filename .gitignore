@@ -14,12 +14,13 @@
 /.zed
 /auth.json
 /node_modules
-/public/build
+# /public/build НЕ ігноруємо — комітимо зібрані ассети, щоб деплоїти на хостинг без npm
 /public/fonts-manifest.dev.json
 /public/hot
 /public/storage
 /storage/*.key
 /storage/pail
+/terminals
 /vendor
 _ide_helper.php
 Homestead.json

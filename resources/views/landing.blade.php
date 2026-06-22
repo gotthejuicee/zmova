@@ -15,7 +15,15 @@
 
     <x-section-divider />
 
+    <x-author-note />
+
+    <x-section-divider />
+
     <x-excerpts />
+
+    <x-section-divider />
+
+    <x-stats-cta />
 
     <x-section-divider />
 
@@ -28,4 +36,7 @@
     <x-section-divider />
 
     <x-footer />
+
+    {{-- Плаваюча кнопка замовлення (з'являється при скролі) --}}
+    <x-floating-cta />
 </x-layouts.app>

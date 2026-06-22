@@ -15,9 +15,32 @@
         </h2>
         <div class="w-24 h-1 mx-auto bg-linear-to-r from-transparent via-[#ffd700] to-transparent rounded-full mb-12 md:mb-16 animate-on-scroll delay-200"></div>
 
-        <p class="mb-12 max-w-2xl mx-auto text-[#f3f3f3] text-lg animate-on-scroll delay-300 italic">
+        <p class="mb-10 max-w-2xl mx-auto text-[#f3f3f3] text-lg animate-on-scroll delay-300 italic">
             Отримайте примірник <span class="text-[#ffd700] font-semibold">"ЗМОВА"</span> у друкованому або електронному форматі. Доставка по всьому світу.
         </p>
+
+        {{-- Доставка та оплата --}}
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12 animate-on-scroll delay-300">
+            @foreach (config('book.delivery') as $item)
+                <div class="flex flex-col items-center gap-2 bg-white/5 border border-[#ffd700]/15 rounded-xl px-4 py-5">
+                    <span class="text-[#ffd700]">
+                        @switch($item['icon'])
+                            @case('truck')
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v8H3z"/><path d="M14 10h4l3 3v2h-7z"/><circle cx="7" cy="17" r="1.6"/><circle cx="17.5" cy="17" r="1.6"/></svg>
+                                @break
+                            @case('card')
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9.5h19"/></svg>
+                                @break
+                            @case('clock')
+                                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                @break
+                        @endswitch
+                    </span>
+                    <span class="font-semibold text-white">{{ $item['title'] }}</span>
+                    <span class="text-sm text-[#f3f3f3]/75">{{ $item['text'] }}</span>
+                </div>
+            @endforeach
+        </div>
 
         <div class="max-w-xl mx-auto bg-white/5 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/10 shadow-[0_0_20px_#ffd70022] animate-on-scroll delay-[400ms]">
             <form action="{{ route('order.store') }}" method="POST" class="space-y-4" @submit.prevent="submit">

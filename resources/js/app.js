@@ -1,4 +1,5 @@
 import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse';
 
 /* ------------------------------------------------------------------ *
  *  Анімації при скролі.
@@ -113,8 +114,53 @@ function orderForm() {
     };
 }
 
+/* ------------------------------------------------------------------ *
+ *  Лічильник із анімацією: рахує від 0 до target, коли елемент
+ *  з'являється у в'юпорті. Поважає prefers-reduced-motion.
+ * ------------------------------------------------------------------ */
+function counter(target, duration = 1800) {
+    return {
+        value: 0,
+        get display() {
+            return this.value.toLocaleString('uk-UA');
+        },
+        init() {
+            const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (reduce || !('IntersectionObserver' in window)) {
+                this.value = target;
+                return;
+            }
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        this.run();
+                        obs.disconnect();
+                    }
+                });
+            }, { threshold: 0.4 });
+            observer.observe(this.$el);
+        },
+        run() {
+            const start = performance.now();
+            const tick = (now) => {
+                const p = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - p, 3); // ease-out
+                this.value = Math.floor(eased * target);
+                if (p < 1) {
+                    requestAnimationFrame(tick);
+                } else {
+                    this.value = target;
+                }
+            };
+            requestAnimationFrame(tick);
+        },
+    };
+}
+
 window.Alpine = Alpine;
+Alpine.plugin(collapse);
 Alpine.data('orderForm', orderForm);
+Alpine.data('counter', counter);
 Alpine.start();
 
 initScrollAnimations();
