@@ -21,6 +21,9 @@
         <meta name="google-site-verification" content="{{ $gv }}">
     @endif
 
+    {{-- LCP: пріоритетне завантаження фону героя --}}
+    <link rel="preload" as="image" href="{{ asset('images/День2.webp') }}" fetchpriority="high">
+
     {{-- Open Graph --}}
     <meta property="og:type" content="book">
     <meta property="og:site_name" content="ЗМОВА">
@@ -28,14 +31,18 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:title" content="{{ $seoTitle }}">
     <meta property="og:description" content="{{ $seoDescription }}">
-    <meta property="og:image" content="{{ asset('images/preview(1).jpg') }}">
+    <meta property="og:image" content="{{ asset('images/og.png') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="ЗМОВА — книга-роман. День, коли зло переможе...">
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="twitter:title" content="{{ $seoTitle }}">
     <meta name="twitter:description" content="{{ $seoDescription }}">
-    <meta name="twitter:image" content="{{ asset('images/preview(1).jpg') }}">
+    <meta name="twitter:image" content="{{ asset('images/og.png') }}">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
 

@@ -19,7 +19,7 @@
             {{-- Манана --}}
             <div class="flex flex-col md:flex-row items-center animate-on-scroll delay-[300ms]">
                 <div class="md:w-1/3 flex flex-col items-center mb-8 md:mb-0">
-                    <img src="{{ asset('images/manana_frame.webp') }}" alt="Манана Магомедова"
+                    <img src="{{ asset('images/manana_frame.webp') }}" alt="Манана Магомедова" width="500" height="500" loading="lazy" decoding="async"
                          class="rounded-full w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 object-cover">
                     <h3 class="mt-4 text-xl sm:text-2xl font-semibold text-[#f3f3f3]">Манана Магомедова</h3>
                     <a href="https://www.instagram.com/iammananiko_/" target="_blank" rel="noopener"
@@ -48,7 +48,7 @@
             {{-- Петро --}}
             <div class="flex flex-col md:flex-row items-center animate-on-scroll delay-[600ms]">
                 <div class="md:w-1/3 flex flex-col items-center mb-8 md:mb-0">
-                    <img src="{{ asset('images/petro_frame.webp') }}" alt="Петро Крижанівський"
+                    <img src="{{ asset('images/petro_frame.webp') }}" alt="Петро Крижанівський" width="500" height="500" loading="lazy" decoding="async"
                          class="rounded-full w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 object-cover">
                     <h3 class="mt-4 text-xl sm:text-2xl font-semibold text-[#f3f3f3]">Петро Крижанівський</h3>
                     <a href="https://www.instagram.com/peter.kryzhanovskiy/" target="_blank" rel="noopener"

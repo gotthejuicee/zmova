@@ -11,7 +11,7 @@
         'numberOfPages' => $book['pages'],
         'bookFormat' => 'https://schema.org/Hardcover',
         'genre' => $book['genre'],
-        'image' => asset('images/preview(1).jpg'),
+        'image' => asset('images/og.png'),
         'url' => url('/'),
         'offers' => [
             '@type' => 'Offer',

@@ -18,7 +18,7 @@
 
         <div class="flex flex-col md:flex-row items-center gap-10">
             <div class="md:w-1/2 animate-on-scroll delay-300 relative">
-                <img src="{{ asset('images/Змова_MockUp5.webp') }}" alt="ЗМОВА"
+                <img src="{{ asset('images/Змова_MockUp5.webp') }}" alt="ЗМОВА" width="918" height="736" loading="lazy" decoding="async"
                      class="rounded-2xl shadow-2xl w-full max-w-md mx-auto border border-[#ffd700]/50 ring-2 ring-[#ffd700]/50 transition-transform hover:scale-105 duration-300" />
 
                 {{-- Золоті іскри --}}

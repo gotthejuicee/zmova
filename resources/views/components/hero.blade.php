@@ -10,7 +10,7 @@
                         Манана <br>Магомедова
                     </h3>
                     <div>
-                        <img src="{{ asset('images/manana_frame_black.webp') }}" alt="Манана Магомедова"
+                        <img src="{{ asset('images/manana_frame_black.webp') }}" alt="Манана Магомедова" width="500" height="500"
                              class="rounded-full w-28 h-28 md:w-[200px] md:h-[200px] object-cover" loading="lazy">
                     </div>
                     <div class="flex flex-col items-center space-y-1 text-xs md:text-base font-medium">
@@ -26,7 +26,7 @@
                         Петро <br>Крижанівський
                     </h3>
                     <div>
-                        <img src="{{ asset('images/petro_frame_black.webp') }}" alt="Петро Крижанівський"
+                        <img src="{{ asset('images/petro_frame_black.webp') }}" alt="Петро Крижанівський" width="500" height="500"
                              class="rounded-full w-28 h-28 md:w-[200px] md:h-[200px] object-cover" loading="lazy">
                     </div>
                     <div class="flex flex-col items-center space-y-1 text-xs md:text-base font-medium">
@@ -39,8 +39,8 @@
 
             {{-- Мокап книги --}}
             <div class="flex flex-col items-center flex-shrink-0 mockup-book">
-                <img src="{{ asset('images/Змова_MockUp_4.webp') }}" alt="Мокап книги ЗМОВА"
-                     class="max-w-[300px] h-auto animate-zoom-in delay-200" loading="lazy"
+                <img src="{{ asset('images/Змова_MockUp_4.webp') }}" alt="Мокап книги ЗМОВА" width="918" height="736"
+                     class="max-w-[300px] h-auto animate-zoom-in delay-200" loading="eager" fetchpriority="high" decoding="async"
                      style="border:none; box-shadow:none; outline:none; background:transparent;">
                 <div class="mt-60 md:mt-72 text-white text-center space-y-2 animate-on-scroll delay-400">
                     <p class="text-lg md:text-xl font-semibold tracking-wide premium-black">Жанр: роман</p>
