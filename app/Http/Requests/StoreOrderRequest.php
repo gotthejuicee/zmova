@@ -21,6 +21,21 @@ class StoreOrderRequest extends FormRequest
             // Телефон: цифри, пробіли та + - ( ) — як на фронті.
             'phone' => ['required', 'string', 'max:32', 'regex:/^[\d\s()+\-]{6,}$/'],
             'comment' => ['nullable', 'string', 'max:300'],
+            // Time-trap: підписана мітка часу. Боти шлють миттєво або без неї.
+            'started' => ['required', 'string', function ($attribute, $value, $fail) {
+                try {
+                    $startedAt = (int) decrypt($value);
+                } catch (\Throwable $e) {
+                    $fail('Помилка валідації.');
+
+                    return;
+                }
+
+                $elapsed = time() - $startedAt;
+                if ($elapsed < 3 || $elapsed > 86400) {
+                    $fail('Помилка валідації.');
+                }
+            }],
             // Honeypot: справжні користувачі це поле не бачать і лишають порожнім.
             'website' => ['prohibited'],
         ];

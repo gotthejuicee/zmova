@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\TrackVisits;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -12,7 +13,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // Приватна аналітика відвідувань (без кук/Google), у кінці web-стека
+        $middleware->web(append: [
+            TrackVisits::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(

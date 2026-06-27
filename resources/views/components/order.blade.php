@@ -46,6 +46,9 @@
             <form action="{{ route('order.store') }}" method="POST" class="space-y-4" @submit.prevent="submit">
                 @csrf
 
+                {{-- Time-trap: підписана мітка часу. Миттєва відправка = бот --}}
+                <input type="hidden" name="started" value="{{ encrypt((string) time()) }}">
+
                 {{-- Honeypot: приховане поле, яке заповнюють лише боти --}}
                 <div aria-hidden="true" style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
                     <label>Не заповнюйте це поле
