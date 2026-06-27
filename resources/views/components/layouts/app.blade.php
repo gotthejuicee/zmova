@@ -1,4 +1,9 @@
-@props(['title' => 'ЗМОВА — День, коли зло переможе...'])
+@props(['title' => null])
+
+@php
+    $seoTitle = $title ?? config('book.seo.title');
+    $seoDescription = config('book.seo.description');
+@endphp
 
 <!DOCTYPE html>
 <html lang="uk" class="scroll-smooth">
@@ -7,21 +12,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title }}</title>
-    <meta name="description" content="Поринь у світ змови, де кожна сторінка тримає в напрузі. Замов зараз.">
+    <title>{{ $seoTitle }}</title>
+    <meta name="description" content="{{ $seoDescription }}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    @if ($gv = config('book.google_site_verification'))
+        <meta name="google-site-verification" content="{{ $gv }}">
+    @endif
 
     {{-- Open Graph --}}
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="book">
+    <meta property="og:site_name" content="ЗМОВА">
+    <meta property="og:locale" content="uk_UA">
     <meta property="og:url" content="{{ url('/') }}">
-    <meta property="og:title" content="ЗМОВА — День, коли зло переможе...">
-    <meta property="og:description" content="Поринь у світ змови, де кожна сторінка тримає в напрузі. Замов зараз.">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
     <meta property="og:image" content="{{ asset('images/preview(1).jpg') }}">
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ url('/') }}">
-    <meta name="twitter:title" content="ЗМОВА — День, коли зло переможе...">
-    <meta name="twitter:description" content="Поринь у світ змови, де кожна сторінка тримає в напрузі. Замов зараз.">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
     <meta name="twitter:image" content="{{ asset('images/preview(1).jpg') }}">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
