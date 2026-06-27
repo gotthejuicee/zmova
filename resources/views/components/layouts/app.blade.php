@@ -21,8 +21,9 @@
         <meta name="google-site-verification" content="{{ $gv }}">
     @endif
 
-    {{-- LCP: пріоритетне завантаження фону героя --}}
-    <link rel="preload" as="image" href="{{ asset('images/День2.webp') }}" fetchpriority="high">
+    {{-- LCP: пріоритетне завантаження фону героя (адаптивно: мобільним легша версія) --}}
+    <link rel="preload" as="image" href="{{ asset('images/День2-sm.webp') }}" media="(max-width: 767px)" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ asset('images/День2.webp') }}" media="(min-width: 768px)" fetchpriority="high">
 
     {{-- Open Graph --}}
     <meta property="og:type" content="book">
@@ -49,9 +50,10 @@
     {{-- schema.org: Book + FAQPage (rich-сніпети в пошуку) --}}
     <x-structured-data />
 
-    {{-- Шрифти: self-hosted дзеркало Google Fonts (без трекінгу), з кириличними сабсетами --}}
+    {{-- Шрифти (Bunny, з кирилицею): вантажимо асинхронно, щоб не блокувати відрисовку --}}
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
-    <link href="https://fonts.bunny.net/css?family=montserrat:300,400,500,700|mulish:400,500,700|oswald:400,600|caveat:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=montserrat:300,400,500,700|mulish:400,500,700|oswald:400,600|caveat:400&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.bunny.net/css?family=montserrat:300,400,500,700|mulish:400,500,700|oswald:400,600|caveat:400&display=swap"></noscript>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

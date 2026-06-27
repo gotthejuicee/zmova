@@ -164,13 +164,15 @@
 
 /* ======================= ГЕРОЙ ======================= */
 .hero-bg {
-    background-image: url('/images/День2.webp');
+    /* мобільним — легша версія (~27KB) для швидшого LCP */
+    background-image: url('/images/День2-sm.webp');
     background-size: 250%;
     background-position: center;
 }
 
 @media (min-width: 768px) {
     .hero-bg {
+        background-image: url('/images/День2.webp');
         background-size: cover;
     }
 }

@@ -3,35 +3,37 @@
 
     <x-section-divider tone="dark" />
 
-    <x-hero />
+    <main>
+        <x-hero />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-plot />
+        <x-plot />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-authors />
+        <x-authors />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-author-note />
+        <x-author-note />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-excerpts />
+        <x-excerpts />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-stats-cta />
+        <x-stats-cta />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-order />
+        <x-order />
 
-    <x-section-divider />
+        <x-section-divider />
 
-    <x-faq />
+        <x-faq />
+    </main>
 
     <x-section-divider />
 
